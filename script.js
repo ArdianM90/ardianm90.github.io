@@ -111,8 +111,8 @@ $(document).ready(function() {
     var requestUrl = apiRoot + 'tasks';
 
     $.ajax({
-      url: requestUrl + '/' + taskId
-      method: 'DELETE'
+      url: requestUrl + '/' + taskId,
+      method: 'DELETE',
       success: function() {
         parentEl.slideUp(400, function() { parentEl.remove(); });
       }
