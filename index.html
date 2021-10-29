@@ -42,6 +42,36 @@
     <h2>Tasks from the API</h2>
     <div class="datatable__tasks-container" data-tasks-container></div>
   </section>
+  
+  <script type="text/javascript">
+        (function() {
+          var id = 'smIframe-th7zsdk5vps1hq41';
+          var PREFIX_OUTGOING = 'SM_RESIZE_IFRAME:' + id;
+          var PREFIX_INCOMING = 'SM_IFRAME_HEIGHT:' + id + ':';
+          var iframe;
+          var findIframe = function() {
+            if (iframe) {
+              return iframe;
+            }
+            iframe = document.getElementById(id);
+            return iframe;
+          };
+          window.addEventListener('resize', function() {
+            findIframe() && iframe.contentWindow.postMessage(PREFIX_OUTGOING, '*');
+          });
+          window.addEventListener('message', function(event) {
+            var messageData = event.data;
+            try {
+              if (messageData.indexOf(PREFIX_INCOMING) !== 0) {
+                return;
+              }
+              findIframe() && (iframe.style.height = parseInt(messageData.replace(PREFIX_INCOMING, '')) + 'px');
+            } catch (e) {}
+          });
+        }());
+      </script>
+      <iframe id="smIframe-th7zsdk5vps1hq41" src="https://app3.salesmanago.pl/ms/sid/5y9zldpzrxoxvc46/th7zsdk5vps1hq41.htm" frameborder="0" style="border: none;width: 100%"></iframe>
+  
 </main>
 
 <div class="template" data-datatable-row-template>
