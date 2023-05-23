@@ -42,77 +42,9 @@
     <h2>Tasks from the API</h2>
     <div class="datatable__tasks-container" data-tasks-container></div>
   </section>
-  
-  <script src="https://app3.salesmanago.pl/dynamic/5y9zldpzrxoxvc46/popups.js"></script>
-	<script type="text/javascript">
-        (function() {
-          var id = 'smIframe-th7zsdk5vps1hq41';
-          var PREFIX_OUTGOING = 'SM_RESIZE_IFRAME:' + id;
-          var PREFIX_INCOMING = 'SM_IFRAME_HEIGHT:' + id + ':';
-          var iframe;
-          var findIframe = function() {
-            if (iframe) {
-              return iframe;
-            }
-            iframe = document.getElementById(id);
-            return iframe;
-          };
-          window.addEventListener('resize', function() {
-            findIframe() && iframe.contentWindow.postMessage(PREFIX_OUTGOING, '*');
-          });
-          window.addEventListener('message', function(event) {
-            var messageData = event.data;
-            try {
-              if (messageData.indexOf(PREFIX_INCOMING) !== 0) {
-                return;
-              }
-              findIframe() && (iframe.style.height = parseInt(messageData.replace(PREFIX_INCOMING, '')) + 'px');
-            } catch (e) {}
-          });
-        }());
-      </script>
-      <div id="salesmanago-Iframe_Landing_page_freemarker"></div>  
-  <div class="template" data-datatable-row-template>
-
-  <form class="datatable__row" data-task-id="0">
-    <fieldset class="datatable__row-section datatable__row-section--input-section" data-task-name-section>
-      <label class="datatable__input-label">
-        Task name
-      </label>
-      <input type="text" name="title" placeholder="Insert a new task name" data-task-name-input required minlength="3">
-      <p class="datatable__field-value" data-task-name-paragraph></p>
-    </fieldset>
-
-    <fieldset class="datatable__row-section datatable__row-section--input-section" data-task-content-section>
-      <label class="datatable__input-label">
-        Task content
-      </label>
-      <textarea name="title" placeholder="Insert new task content" data-task-content-input required minlength="3"></textarea>
-      <p class="datatable__field-value" data-task-content-paragraph></p>
-    </fieldset>
-
-    <div class="datatable__row-section-wrapper">
-      <fieldset class="datatable__row-section datatable__row-section--button-section">
-        <button type="button" data-task-submit-update-button class="datatable__button datatable__button--editing ">Submit update</button>
-        <button type="button" data-task-edit-abort-button class="datatable__button datatable__button--editing">Abort update</button>
-        <button type="button" data-task-edit-button class="datatable__button">Edit</button>
-        <button type="button" data-task-delete-button class="datatable__button">Delete</button>
-      </fieldset>
-
-      <fieldset class="datatable__row-section datatable__row-section--trello-section">
-        <select class="datatable__select" name="board-name" data-board-name-select>
-          <option disabled selected>--- select an board ---</option>
-        </select>
-        <select class="datatable__select" name="list-name" data-list-name-select>
-          <option disabled selected>--- select a list ---</option>
-        </select>
-        <button type="button" data-trello-card-creation-trigger class="datatable__button datatable__button--card-creation">
-          Create a card
-        </button>
-      </fieldset>
-    </div>
-  </form>
-</div>
+  <section>
+    <div id="salesmanago-Iframe_Landing_page_freemarker"></div>  
+  </section>
 </main>
 
 <script>
