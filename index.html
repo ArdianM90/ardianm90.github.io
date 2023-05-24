@@ -51,7 +51,24 @@
 
   <!-- SALESMANAGO Lead Ekspress LP HTML -->
   Test<br>
-  <iframe id="salesmanagoIframe" style="margin: 0; padding: 0; width:370px; height:315px; overflow-y:hidden; overflow-x:hidden; border:none; background:#ffffff;" src="https://app3.salesmanago.pl/cf/5y9zldpzrxoxvc46/Sprawdzam_czy_jest_UTM.htm"></iframe>
+  <div id="salesmanago-Iframe_e8815a8d-a149-4810-a88b-4c5b77ab766d"></div>
+        <script>
+        (function() {
+            var smIframeParentElem = document.getElementById("salesmanago-Iframe_e8815a8d-a149-4810-a88b-4c5b77ab766d");
+            var smIframeElem = document.createElement("iframe");
+            smIframeElem.src = "https://app3.salesmanago.pl/mscf/5y9zldpzrxoxvc46/default/Moj_nowy_landing_page_2023-05-24_10_42_55.htm?" + Date.now() + '"';
+            smIframeElem.style.margin = "0";
+            smIframeElem.style.padding = "0";
+            smIframeElem.width = "600";
+            smIframeElem.height = "500";
+            smIframeElem.style.overflowY = "hidden";
+            smIframeElem.style.overflowX = "hidden";
+            smIframeElem.style.background = "#ffffff";
+            smIframeElem.style.maxWidth = "100%";
+            smIframeElem.style.border = "none";
+            smIframeParentElem.appendChild(smIframeElem);
+        }());
+        </script>
   <br>Test
   <!-- SALESMANAGO -->
 
