@@ -5,6 +5,7 @@
     <name>Rower</name>
     <category>Bikes</category>
     <price>8388.00</price>
+    <brand>rower</brand>
     <url>https://ardianm90.github.io/pr_no1.html</url>
     <image><![CDATA[https://www.productsafety.gov.au/system/files/styles/wide/private/SPEEDER%2020-D_AUST.jpg?itok=xDwHWdEx]]></image>
   </product>
@@ -13,6 +14,7 @@
     <name>Kot</name>
     <category>Cats</category>
     <price>24.00</price>
+    <brand>kot</brand>
     <url>https://ardianm90.github.io/pr_no2.html</url>
     <image><![CDATA[https://www.rd.com/wp-content/uploads/2021/03/GettyImages-140594401-1-scaled.jpg?resize=2048,1360]]></image>
   </product>
@@ -21,6 +23,7 @@
     <name>Product</name>
     <category>Others</category>
     <price>8.00</price>
+    <brand>stuff</brand>
     <url>https://ardianm90.github.io/pr_no3.html</url>
     <image><![CDATA[https://www.investopedia.com/thmb/XaPC5AcDS3w_tsrdUgi-_rv30Vc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/product-placement-46b1bf125cce480ea65a29fc8580e8eb.jpg]]></image>
   </product>
@@ -37,6 +40,7 @@
     <name>Drugi rower</name>
     <category>Bikes</category>
     <price>214.00</price>
+    <brand>stuff</brand>
     <url>https://ardianm90.github.io/pr_no5.html</url>
     <image><![CDATA[https://shopware.accell.cloud/thumbnail/13/09/28/1655479715/Banana-balance-image-1_640x640.jpg]]></image>
   </product>
