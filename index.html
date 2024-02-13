@@ -69,8 +69,10 @@
 <!-- <script src="https://app3.salesmanago.pl/dynamic/5y9zldpzrxoxvc46/popups.js"></script> -->
 <!-- SALESMANAGO -->
 
-<!-- <iframe id="salesmanagoIframe" style="margin: 0; padding: 0; width:370px; height:315px; overflow-y:hidden; overflow-x:hidden; border:none; background:#ffffff;" src="https://app3.salesmanago.pl/cf/5y9zldpzrxoxvc46/Test_CH_Beck2.htm"></iframe> -->
+Form działający:<br>
+<iframe id="salesmanagoIframe" style="margin: 0; padding: 0; width:370px; height:315px; overflow-y:hidden; overflow-x:hidden; border:none; background:#ffffff;" src="https://app3.salesmanago.pl/cf/5y9zldpzrxoxvc46/Test_CH_Beck2.htm"></iframe>
 
+<br>Form nie działający:<br>
 <form id="externalContactForm" method="post" action="https://app3.salesmanago.pl/form/5y9zldpzrxoxvc46/contact.htm">
       <input type="hidden" id="formId" name="formId" value="907d047a-1a7b-4222-8675-2bff4b9e1d02" />
       <input type="hidden" name="lang" value="pl" />
@@ -79,13 +81,14 @@
       <input type="text" name="sm-form-email" placeholder="email" title="E-mail" id="sm-form-email" required="" />
       <input type="submit" name="sm-form-submit" id="sm-form-submit" value="Save" />
       <input type="hidden" name="sm-form-consent-id-4310-ZGODA_TEST" value="true">
+      <input type="checkbox" name="sm-form-consent-name-ZGODA_TEST" value="on">
       <!-- <label > 
         <input class="required-entry checkbox" type="checkbox" name="sm-form-consent-name-ZME_BECK_LP_NEWSLETTER" id="sm-form-consent-name-ZME_BECK_LP_NEWSLETTER" data-required="true" autocomplete="off" />
         <span class="checkText" id="mailZgoda" for="sm-form-consent-name-ZME_BECK_LP_NEWSLETTER">Chcę otrzymywać informacje o promocjach i nowościach C.H.Beck z&nbsp;wykorzystaniem adresu e-mail.</span>
       </label> -->
     </form>
     <script>
-      var contactForms = document.getElementsByTagName("form");
+      var contactForms = document.getElementsById("externalContactForm");
       for (var j = 0; j < contactForms.length; j++) {
         if (contactForms[j].getAttribute("action") && contactForms[j].getAttribute("action").indexOf("/contact.htm") > 0) {
           var emailInput = contactForms[j].elements["sm-form-email"];
