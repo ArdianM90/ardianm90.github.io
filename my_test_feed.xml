@@ -44,4 +44,13 @@
     <url>https://ardianm90.github.io/pr_no5.html</url>
     <image><![CDATA[https://shopware.accell.cloud/thumbnail/13/09/28/1655479715/Banana-balance-image-1_640x640.jpg]]></image>
   </product>
+  <product>
+    <id>6</id>
+    <name>Url with space</name>
+    <category>Others</category>
+    <price>101.00</price>
+    <brand>stuff</brand>
+    <url>https://ardianm90.github.io/614 520176274/bit-ph1-zuti-1-4-l25mm</url>
+    <image><![CDATA[https://shopware.accell.cloud/thumbnail/13/09/28/1655479715/Banana-balance-image-1_640x640.jpg]]></image>
+  </product>
 </products>
