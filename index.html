@@ -46,6 +46,10 @@
     <b>Ramka rekomendacji</b>
     <div id="reco_frame_no1"></div>
   </section>
+  <section>
+    <b>Frontend SDK</b>
+    <button id="send_event_btn" onclick="frontendSdk()">Send event</button>
+  </section> 
 </main>
 
 <!-- <script src="jquery-3.5.1.min.js"></script> -->
@@ -86,5 +90,26 @@
   })(window, 'sm', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'app3.salesmanago.pl/static/sm.js');
 </script>
 <!-- SALESMANAGO -->
+
+<!-- FRONTEND SDK -->
+<script>
+function frontendSdk() {
+  document.getElementById("send_event_btn").style.color = "red";
+  let date = new Date();
+  sm('extEvent', {
+      "owner": "adrian.mienkowski@salesmanago.com",
+      "email": "adrian.mienkowski@salesmanago.com",
+      "date": date.getTime(),
+      "contactExtEventType": "PURCHASE",
+      "products": "p0123, p4567",
+      "value": 189.99,
+      "location": "examplecom",
+      "products": "p0123, p4567",
+      "externalId": "ID-123456",
+      "details": ["detail1", "detail2"]
+  });
+}
+</script>
+<!-- FRONTEND SDK -->
 
 </html>
