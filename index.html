@@ -96,15 +96,6 @@
     document.getElementById("send_event_btn").style.color = "red";
     let date = new Date();
     for (let i = 0; i < 1000; i++) {
-      let productCollectionData = {
-        "collectionUUID": "0cb97e92-c265-4378-ba7a-11835cbcfd28",
-        "method": "add",
-        "productIds": [
-          "P0123"
-        ]
-      };
-      SMApi.setAll(productCollectionData);
-      SMApi.execute('productCollection');
       console.log("Product "+i+" sent");
     }
   }
