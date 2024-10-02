@@ -95,9 +95,18 @@
   function frontendSdk() {
     document.getElementById("send_event_btn").style.color = "red";
     let date = new Date();
-    for (let i = 0; i < 1000; i++) {
-      console.log("Product "+i+" sent");
-    }
+    sm('extEvent', {
+      "owner": "adrian.mienkowski@salesmanago.com",
+      "email": "adrian.mienkowski@salesmanago.com",
+      "date": date.getTime(),
+      "contactExtEventType": "PURCHASE",
+      "products": "p0123, p4567",
+      "value": 189.99,
+      "location": "examplecom",
+      "products": "p0123, p4567",
+      "externalId": "ID-123456",
+      "details": ["detail1", "detail2"]
+    });
   }
 </script>
 
